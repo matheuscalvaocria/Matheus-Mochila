@@ -10,14 +10,14 @@ function criaElemento(nome, quantidade) {
     console.log(nome)
     console.log(quantidade)
 
+      //<li class="item"><strong>3</strong>Meia</li>
     const novoItem = document.createElement('li')
     novoItem.classList.add("item")
 
-    //<li class="item"><strong>3</strong>Meia</li>
     const numeroItem = document.createElement('strong')
-    numeroItem.inn = quantidade
+    numeroItem.innerHTML = quantidade
 
-    novoItem.appendChild(novoItem)
+    novoItem.appendChild(numeroItem)
     novoItem.innerHTML += nome
 
     const lista = document.getElementById("lista")
